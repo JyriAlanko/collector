@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 
+
+import './StampContainer.css'
+
 class Header extends Component {
     render(){
 
         return (
-            <div>
+            <div className='Header'>
                 <h1> Collector </h1>
             </div>
         )

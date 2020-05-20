@@ -5,15 +5,13 @@ import StampContainer from './StampContainer';
 class MainWindow extends Component {
     render() {
         
-    return (
+        return (
 
-    <div>
-        <StampContainer stamp={this.props.stampCollection[0]}/>
-    </div>
+            <div>
+                <StampContainer stamp={this.props.stampCollection[0]}/>
+            </div>
 
-)
-      
-    }
+            )}
 }
 
 export default MainWindow;

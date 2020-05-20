@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import StampContainerImage from './StampContainerImage'
 import StampContainerData from './StampContainerData'
+import './StampContainer.css'
 
 export default class StampContainer extends Component {
     constructor() {
@@ -19,20 +20,41 @@ export default class StampContainer extends Component {
 
 
     render() {
-        
+        const {name, imageUrl} = this.props.stamp;
 
         return (
-            <div>
-                <div className='StampContainerHeader' onClick={() =>
-                this.headerclicked()}>
-                    {this.props.stamp.name}
-                </div>
+            <div class="container-fluid">
+                <div class="row">
+            
+                    <div className='stampContainer'>
+                        <div className='stampContainerHeader' onClick={() =>
+                        this.headerclicked()}>
+                            {name}
+                        </div>
 
-                <div hidden={!this.state.showFull}>
+                        <div hidden={!this.state.showFull}>
+                            <table>
+                                <tbody>
 
-                    <StampContainerImage imageUrl={this.props.stamp.imageUrl}/>
+                                    <tr>
 
-                    <StampContainerData stamp={this.props.stamp}/>
+                                        <td>
+                                            <StampContainerImage imageUrl={imageUrl}/>
+                                        </td>
+
+
+                                        <td>
+                                            <StampContainerData stamp={this.props.stamp}/>
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         )

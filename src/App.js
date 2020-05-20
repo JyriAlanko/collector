@@ -3,6 +3,8 @@ import Header from './components/Header';
 import MainWindow from './components/MainWindow';
 import stampCollection, { InitDataManager } from './DataManager';
 
+import './App.css';
+
 function App() {
   
   InitDataManager();
@@ -21,5 +23,3 @@ function App() {
   }
 
 export default App;
-
-//{testData[0].name}
