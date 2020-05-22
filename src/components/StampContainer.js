@@ -18,8 +18,10 @@ export default class StampContainer extends Component {
         });
     }
 
-
     render() {
+
+
+
         const {name, imageUrl} = this.props.stamp;
 
         return (

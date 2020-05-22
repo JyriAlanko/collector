@@ -30,9 +30,15 @@ class StampContainerData extends Component {
                             </tr>
 
 
+                                <td className='tableHeader'>Price</td>
+                            <tr>
+                                <td className='tableData'>{stamp.getPriceString()+ '€'}</td>
+                            </tr>
+
+
                                 <td className='tableHeader'>Is stamped</td>
                             <tr>
-                                <td className='tableData'>{isStamped}</td>
+                                <td className='tableData'>{'' + isStamped}</td>
                             </tr>
 
                             
