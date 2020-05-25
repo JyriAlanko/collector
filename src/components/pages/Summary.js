@@ -1,17 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
 
 
-export default function Summary() {
-    return (
-        <React.Fragment>
-            <div className="Header">
 
-            <h1>Summary</h1>
-            <Link to="/">Main</Link> | <Link to="/stamplist">List</Link> | <Link to="/about">About</Link> | <Link to="/addstamp">Add Stamp</Link>
-            <p>This is summary of the stamp collector</p>
+export default class Summary extends Component {
+    render(){
+
+        let i = 0;
+        let list = [];
+
+        this.props.stampCollection.forEach((element) => {
+            list.push(<p key={i}>{element.name}</p>);
+            i++
+        })
+        return (
+            
+            <div classname="">
+            
+                <p>This is summary of the stamp collector</p>
+
+                <div>
+                    {list}
+                </div>
 
             </div>
-        </React.Fragment>
-    )
+    
+        )
+    }
 }

@@ -1,0 +1,22 @@
+.editContainer{
+    background-color: rgb(67, 196, 174);
+    border-radius: 10px;
+}
+
+td {
+    text-align: right;
+}
+
+.centerButton{
+    text-align: center;
+}
+.editButton {
+    background-color: gray;
+    border: none;
+    color: white;
+    
+}
+
+.editButton a:hover{
+    background-color: red;
+}

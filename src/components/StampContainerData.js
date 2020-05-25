@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './StampContainer.css'
+import './StampContainerData.css'
 
 class StampContainerData extends Component {
     render() {

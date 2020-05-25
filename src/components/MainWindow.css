@@ -1,0 +1,17 @@
+.routerLink{
+    background-color: gray;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px
+}
+
+a:link {
+    color: blue;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a:hover, a:active {
+    color: red;
+
+}
