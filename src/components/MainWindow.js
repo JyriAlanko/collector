@@ -6,7 +6,6 @@ import './MainWindow.css';
 import StampList from './pages/StampList';
 import About from './pages/About';
 import Summary from './pages/Summary';
-import EditStampFrom from './pages/EditStampFrom';
 import AddStampContainer from './pages/AddStampContainer';
 
 class MainWindow extends Component {
@@ -23,6 +22,7 @@ class MainWindow extends Component {
     }
 
     updateCollection(){
+        
         this.setState({
             stampCollection: this.state.dataManager.stampCollection
         });

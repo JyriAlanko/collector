@@ -4,6 +4,7 @@ import './EditStampFrom.css';
 
 import Stamp from '../../Stamp';
 import StampContainerImage from '../StampContainerImage';
+import updateCollection from '../MainWindow'
 
 class EditStampFrom extends Component {
 
@@ -57,6 +58,7 @@ class EditStampFrom extends Component {
         })
     }
 
+    /* Add to list/button */
     submit = (event) => {
         let {stampName, stampYearPublished, stampIsStamped, stampCountry,
             stampPrice, stampImageUrl } = this.state;
@@ -68,7 +70,7 @@ class EditStampFrom extends Component {
             stampPrice, stampImageUrl);
 
         this.props.addStampToCollection(stamp);
-        console.log(stamp);
+        new updateCollection(stamp);
         event.preventDefault();
     }
     render (){
@@ -77,9 +79,8 @@ class EditStampFrom extends Component {
     
         return (
             <div className='editContainer'>
-                <form onSubmit={this.submit}> 
+                <form className='formContainer' onSubmit={this.submit}> 
 
-                    <StampContainerImage imageUrl={stampImageUrl} />
 
                     <table>
                         <tbody>
@@ -153,15 +154,17 @@ class EditStampFrom extends Component {
                                 </td>
                             </tr>
 
-                            <tr valign="bottom">
+                            <tr>
                                 <td>
 
-                                </td>
                                 <button className="editButton" type='submit'>Submit</button>
+                                </td>
+                                   
                             </tr>
                             
                         </tbody>
                     </table> 
+                    <StampContainerImage imageUrl={stampImageUrl} />
                 </form>
             </div>
     

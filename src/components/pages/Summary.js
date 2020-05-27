@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import './Summary.css';
 
 
 export default class Summary extends Component {
@@ -14,11 +14,11 @@ export default class Summary extends Component {
         })
         return (
             
-            <div classname="">
+            <div className="summaryHeader">
             
-                <p>This is summary of the stamp collector</p>
+                This is summary of the stamp collector
 
-                <div>
+                <div className="summaryList">
                     {list}
                 </div>
 

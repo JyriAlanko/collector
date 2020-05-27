@@ -25,8 +25,8 @@ export default class StampContainer extends Component {
         const {name, imageUrl} = this.props.stamp;
 
         return (
-            <div class="container-fluid">
-                <div class="row">
+            <div className="container-fluid">
+                <div className="row">
             
                     <div className='stampContainer'>
                         <div className='stampContainerHeader' onClick={() =>

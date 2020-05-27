@@ -1,0 +1,9 @@
+.summaryHeader{
+    background-color: rgb(67, 196, 174);
+    border-radius: 10px;
+}
+
+.summaryList{
+    background-color: lightpink;
+    border-radius: 0px 0px 10px 10px;
+}

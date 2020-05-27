@@ -1,14 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 
 export default function About() {
     return (
         
-            <div className="Header">
+            <div className="aboutHeader">
             
             
-            <p>This is stamp collector app v1</p>
+            This is stamp collector app v1
 
             </div>
         

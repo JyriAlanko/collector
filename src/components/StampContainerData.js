@@ -7,37 +7,37 @@ class StampContainerData extends Component {
         const { name, yearPublished, isStamped, country} = stamp;
     
         return (
-            <div class='container-fluid'>
-                <div class="row">
+            <div className='container-fluid'>
+                <div className="row">
                     <table className='stampTable'>
                         <tbody>
 
-                                <td className='tableHeader'>Name</td>
                             <tr>
+                                <td className='tableHeader'>Name</td>
                                 <td className='tableData'>{name}</td>
                             </tr>
 
                             
-                                <td className='tableHeader'>Year</td>
                             <tr>
+                                <td className='tableHeader'>Year</td>
                                 <td className='tableData'>{yearPublished}</td>
                             </tr>
 
 
-                                <td className='tableHeader'>Country</td>
                             <tr>
+                                <td className='tableHeader'>Country</td>
                                 <td className='tableData'>{country}</td>
                             </tr>
 
 
-                                <td className='tableHeader'>Price</td>
                             <tr>
+                                <td className='tableHeader'>Price</td>
                                 <td className='tableData'>{stamp.getPriceString()+ '€'}</td>
                             </tr>
 
 
-                                <td className='tableHeader'>Is stamped</td>
                             <tr>
+                                <td className='tableHeader'>Is stamped</td>
                                 <td className='tableData'>{'' + isStamped}</td>
                             </tr>
 

@@ -10,6 +10,8 @@
     text-align: center;
     padding-left: 5px;
     padding-right: 4px;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 10px;
 }
 
 .tableData{
@@ -18,5 +20,5 @@
     background-color: lightpink;
     padding-left: 5px;
     padding-right: 5px;
-    
+    border-radius: 10px;
 }

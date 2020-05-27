@@ -9,8 +9,13 @@
     text-align: center;
 }
 
+.aboutHeader{
+    background-color: rgb(67, 196, 174);
+    border-radius: 10px
+}
+
 .stampContainer {
-    width: 99%;
+    width: 99.7%;
     background-color: rgb(67, 196, 174);
     border: 2px solid black;
     margin: 1px;

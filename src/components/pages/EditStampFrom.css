@@ -1,8 +1,14 @@
 .editContainer{
     background-color: rgb(67, 196, 174);
     border-radius: 10px;
+    padding: 10px;
+    margin: 5;
+    text-align: center;
 }
 
+.formContainer{
+    display: inline-block;
+}
 td {
     text-align: right;
 }
@@ -14,6 +20,10 @@ td {
     background-color: gray;
     border: none;
     color: white;
+    display: block;
+    width: 150%;
+    
+    
     
 }
 
